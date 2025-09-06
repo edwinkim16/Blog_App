@@ -41,3 +41,26 @@ def api_blogs(request):
         payload.append(result)
         
     return JsonResponse(payload, safe=False)
+
+def login_page(request):
+    if request.method == "POST":
+        
+        try:
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user_obj = User.objects.filter(username=username)
+            if not user_obj.exists():
+                messages.error(request, "Username not found")
+                return redirect('/login/')
+            user_obj = authenticate(username=username, password = password)
+            if user_obj:
+                login(request, user_obj)
+                return redirect('/')
+            messages.error(request, "Wrong Password")
+            return redirect('/login/')
+            
+        except Exception as e:
+            messages.error(request, " Somthing went wrong")
+            return redirect('/register/')
+        
+    return render(request, "login.html")
