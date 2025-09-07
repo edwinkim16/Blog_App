@@ -1,5 +1,5 @@
 # {Blogs Site}
-#### {}, {Sep 2025}
+#### {Sep 2025}
 #### By **Edwin Kimathi**
 ## Description
 A blog post recommendation system using Django. It covers the integration of a user-friendly login system with a registration form, ensuring a seamless experience for website visitors. Additionally, it implements a sophisticated search functionality that allows users to tailor their searches based on preferences and level ranges.
@@ -19,6 +19,6 @@ A blog post recommendation system using Django. It covers the integration of a u
 ## Support and contact details
 Incase of any queries you can reach me through email edwinkimathi226@gmail.com
 ### License
-This Project comes wit MIT License. View it <a href="https://github.com/edwinkim16/Blog_App">here</a>
+This Project comes wit MIT License. View it <a href="https://github.com/edwinkim16/Blog_App/blob/master/License">here</a>
  Edwin Kimathi
   
